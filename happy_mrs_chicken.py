@@ -11,17 +11,17 @@ pygame.display.set_caption('快乐小鸡')
 WHITE = (0, 0, 255)
 DISPLAYSURF.fill(WHITE)
 
-backdrop = pygame.image.load('backdrop.png')
+backdrop = pygame.image.load('images/backdrop.png')
 
-chickens = [pygame.image.load('hmc.png'), pygame.image.load('hmc2.png')]
-egg = pygame.image.load('egg.png')
+chickens = [pygame.image.load('images/hmc.png'), pygame.image.load('images/hmc2.png')]
+egg = pygame.image.load('images/egg.png')
 chicken_position = (random.randint(0, 960-157), random.randint(0, 720-195))
 chicken_number = 0
 IMAGE_TIME = 20
 
 egg_positions = []
 
-meow = pygame.mixer.Sound('meow.wav')
+meow = pygame.mixer.Sound('sounds/meow.wav')
 
 clock = pygame.time.Clock()
 while True: # main game loop
